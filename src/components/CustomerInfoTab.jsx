@@ -34,10 +34,10 @@ function CustomerInfoTab() {
   };
 
   const clearForm = () => {
-    setEmail('');
     setPrefix('');
     setFirstName('');
     setLastName('');
+    setEmail('');
     setPhoneType('Mobile');
     setCountryCode('');
     setPhoneNumber('');
