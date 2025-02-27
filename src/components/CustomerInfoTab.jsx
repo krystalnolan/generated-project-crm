@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function CustomerInfoTab() {
+  const [email, setEmail] = useState('');
   const [prefix, setPrefix] = useState('');
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
-  const [email, setEmail] = useState('');
   const [phoneType, setPhoneType] = useState('Mobile');
   const [countryCode, setCountryCode] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -34,10 +34,10 @@ function CustomerInfoTab() {
   };
 
   const clearForm = () => {
+    setEmail('');
     setPrefix('');
     setFirstName('');
     setLastName('');
-    setEmail('');
     setPhoneType('Mobile');
     setCountryCode('');
     setPhoneNumber('');
